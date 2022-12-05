@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        h1{
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h2{
+        font-size: 20px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1 >EMI CALCULATOR</h1>
+    <h2 >ENTER THE AMOUNT : </h2>
+    <input type="number" id="amount" placeholder="0" min="0" required><br><br>
+    <h2>ENTER THE INTEREST % : </h2>
+    <input type="number" id="interest" placeholder="0" min="0" required><br><br>
+    <h2>ENTER TIME TENURE(in months) : </h2>
+    <input type="number" id="time" placeholder="0" min="0" required><br><br>
+    <input type="submit" id="calculate" value="SUBMIT"><br><br>
+    <h1 >LOAN EMI = <span id="EMI"></span></h1>
+    <h1 >Interst Amount = <span id="Total Interest"></span></h1>
+    <h1 >LOAN EMI = <span id="Total Payment"></span></h1>
+    <script src="cal.js"></script>
+</body>
+</html>

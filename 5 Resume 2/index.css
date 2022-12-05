@@ -1,0 +1,95 @@
+html {
+  background-color: #0c3387;
+}
+
+body {
+  font-family:Tahoma, sans-serif;
+  font-size: 87%;
+}
+
+.container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing:border-box;
+
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+h2 {
+  color:rgb(11, 28, 92);
+  font-size: medium;
+  text-transform: uppercase;
+
+}
+.content-area {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.main-area {
+  width: 65%;
+  float: left;
+  padding-bottom: 5px;
+  
+}
+
+.sidebar {
+  width: 35%;
+  float: left;
+  background-color: #e5e9dc;
+  padding: 0px 30px 20px 40px;
+  box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  font-size: 85%;
+  color: #999;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear:both;
+}
+
+.group {
+  zoom: 1;
+}
+
+.container.content-area group.main-area.skill_name {
+  width: 25%;
+}
+.container.content-area group.main-area.skill_name.skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #0e2e39;
+  position: relative;
+}
+
+.container.content-area group.main-area .skill_name.skill_progress.skill_per {
+  width: 15%;
+}
+
+.container.content-area group.main-area.skill_name.skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgb(82, 12, 12);
+}
