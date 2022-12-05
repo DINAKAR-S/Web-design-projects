@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verify</title>
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/01dac07d9d.js" crossorigin="anonymous" async></script>
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="index.js"></script>
+
+</head>
+<body>
+	<div class="nav">
+		<img src="1.png" class="logo">
+	</div>
+	<div class="flex-container">
+	<div class="container-2">
+		<img src="notif-2.png" class="image">
+	</div>
+	<div class="container-1">
+	<h2 class="sub-head">Please verify the OTP to login</h2>
+	<form class="form-group">
+		<div class="input-container">
+			<input
+			type="number"
+			max="9999"
+			min="1000"
+			placeholder="Enter the OTP"
+			class="mobile"
+			id="otp"
+			oninput="validateOTP()"
+			style="width: 50%"/>
+		</div>
+		<p id="alert"></p>
+		<p class="sub-label">Please enter the OTP<br>recieved in previous alert tab</p>
+		<div class="button-container">
+		<a class="submit-button" onclick="return verifyOTP()">Verify OTP <i class="fas fa-user-check"></i></a>
+	</div>
+	</form>
+	</div>
+</div>
+</body>
+</html>
